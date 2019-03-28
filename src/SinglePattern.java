@@ -4,9 +4,7 @@
 class SingleSlacker {
     private static SingleSlacker slacker;
 
-    private SingleSlacker() {
-        slacker = new SingleSlacker();
-    }
+    private SingleSlacker() { }
 
     /**
      * 懒汉式线程安全
@@ -67,7 +65,7 @@ enum SingleEnum {
     }
 }
 
-public class Single {
+public class SinglePattern {
     public static void main(String[] args) {
         SingleSlacker.getInstance().test();
         SingleHungry.getInstance().test();
