@@ -11,7 +11,6 @@ class Milk implements Price {
 
 class PriceDecotor implements Price {
     Price price;
-
     public PriceDecotor(Price price) {
         this.price = price;
     }
